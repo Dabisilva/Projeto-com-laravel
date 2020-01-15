@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('site.home');
+})->name('site.home');
+
+Route::get('/', function () {
+    return view('.site.sobre');
+})->name('site.sobre');
+
+Route::get('/', function () {
+    return view('site.contato');
+})->name('site.contato');
