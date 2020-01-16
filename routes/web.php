@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('site.home');
 })->name('site.home');
 
-Route::get('/', function () {
+Route::get('/sobre', function () {
     return view('.site.sobre');
 })->name('site.sobre');
 
-Route::get('/', function () {
+Route::get('/contato', function () {
     return view('site.contato');
 })->name('site.contato');
