@@ -9,14 +9,14 @@
 
     <link rel="stylesheet" href="{{ asset('site/style.css') }}">
 </head>
-<body class="text-center">
+<body id="corpo" class="text-center">
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-orange">
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link btn-lg" href="http://localhost/Projeto-com-laravel/public/home">Home</a>
+                    <a class="nav-link btn-lg bg-bl" href="http://localhost/Projeto-com-laravel/public/home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link btn-lg" href="http://localhost/Projeto-com-laravel/public/sobre">Sobre</a>
@@ -37,23 +37,14 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
+        <div id="myCarousel" class="carousel-inner">
             <div class="carousel-item active">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
                 <div class="container">
                     <div class="carousel-caption text-left">
 
-                        @if(date('H')>=0 && date('H')<=6)
-                            <h4>Olá! Boa Madrugada :)</h4>
-                        @elseif(date('H')>=7 && date('H')<=12)
-                            <h4>Olá! Bom dia</h4>
-                        @elseif(date('H')>=13 && date('H')<=18)
-                            <h4>Olá! Boa Tarde</h4>
-                        @else
-                            <h4>Olá! Boa noite</h4>
-                        @endif
-                        <h1>Laravel</h1>
-                        <h1>O framework PHP para artesãos da Web.</h1>
+                        <h1 class="text-orange">Laravel</h1>
+                        <h2>O framework PHP para artesãos da Web.</h2>
                         <p>O Laravel é uma estrutura de aplicativos da web com sintaxe expressiva e elegante. Já lançamos as bases - liberando você para criar sem suar as pequenas coisas.</p>
                     </div>
                 </div>
@@ -62,8 +53,8 @@
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Bootstrap.</h1>
-                        <h1>A biblioteca de componentes front-end mais popular do mundo.</h1>
+                        <h1 class="text-roxobo">Bootstrap.</h1>
+                        <h2>A biblioteca de componentes front-end mais popular do mundo.</h2>
                         <p>Crie projetos responsivos HTML, CSS e JS para dispositivos móveis na Web.</p>
                     </div>
                 </div>
@@ -72,8 +63,8 @@
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
                 <div class="container">
                     <div class="carousel-caption text-right">
-                        <h1>Jquery</h1>
-                        <h1>jQuery mudou a maneira como milhões de pessoas escrevem JavaScript.</h1>
+                        <h1 class="text-azulquery">Jquery</h1>
+                        <h2>jQuery mudou a maneira como milhões de pessoas escrevem JavaScript.</h2>
                         <p>O jQuery é uma biblioteca JavaScript rápida, pequena e rica em recursos. Isso simplifica muito o processo de passagem e manipulação de documentos HTML, manipulação de eventos, animação e Ajax com uma API fácil de usar que funciona em vários navegadores.</p>
                     </div>
                 </div>
@@ -89,12 +80,11 @@
         </a>
     </div>
 
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <div id="sobre" class="position-relative">
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
@@ -102,19 +92,19 @@
 
                 <h2>Instalar Bootstrap</h2>
                 <p>Inclua os arquivos Sass e JavaScript de origem do Bootstrap via npm, Composer ou Meteor. As instalações gerenciadas por pacote não incluem documentação, mas incluem nosso sistema de construção e leia-me...</p>
-                <p><a target="_blank" class="btn btn-secondary" href="https://getbootstrap.com/" role="button">Ver detalhes &raquo;</a></p>
+                <p><a target="_blank" class="btn btn-roxobo" href="https://getbootstrap.com/" role="button">Ver detalhes &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
 
                 <h2>Laravel Vapor</h2>
                 <p>O Laravel Vapor é uma plataforma de implantação sem servidor para o Laravel, desenvolvida pela AWS. Inicie sua infraestrutura Laravel no Vapor e se apaixone pela simplicidade escalável dos servidores sem servidor...</p>
-                <p><a target="_blank" class="btn btn-secondary" href="https://vapor.laravel.com/" role="button">Ver detalhes &raquo;</a></p>
+                <p><a target="_blank" class="btn btn-Vapor" href="https://vapor.laravel.com/" role="button">Ver detalhes &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
 
                 <h2>Download do jQuery</h2>
                 <p>Cópias compactadas e descompactadas dos arquivos jQuery estão disponíveis. O arquivo não compactado é melhor usado durante o desenvolvimento ou depuração; o arquivo compactado economiza largura de banda e melhora o desempenho na produção...</p>
-                <p><a target="_blank" class="btn btn-secondary" href="https://jquery.com/download/" role="button">Ver detalhes &raquo;</a></p>
+                <p><a target="_blank" class="btn btn-azulquery" href="https://jquery.com/download/" role="button">Ver detalhes &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -163,13 +153,13 @@
 
     </div><!-- /.container -->
 
-
-    <!-- FOOTER -->
+    <div id="footer">
     <footer class="container">
         <p><a class="float-right btn btn-primary" href="">Topo</a></p>
-        <p>Twitter <a target="_blank" href="https://twitter.com/Dabisilva1">Davi Barbosa</a>/ GitHub<a target="_blank" href="https://github.com/Dabisilva"> Dabisilva</a></p>
-        <p class="float-left">&copy; {{ date('Y') }} Company</p>
+            <p class="float-left text-white">&copy; {{ date('Y') }} Company</p>
+            <p class="float-md-none text-white">Twitter <a target="_blank" href="https://twitter.com/Dabisilva1">Davi Barbosa</a>/ GitHub<a target="_blank" href="https://github.com/Dabisilva"> Dabisilva</a></p>
     </footer>
+    </div>
 </main>
 
 <script src="{{ asset('site/jquery.js') }}"></script>

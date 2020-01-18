@@ -8,15 +8,24 @@
     <title>Contato</title>
 
     <link rel="stylesheet" href="{{ asset('site/style.css') }}">
+    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
 </head>
-<body class="text-center">
+<body id="corpo" class="text-center">
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-orange">
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link btn-lg" href="http://localhost/Projeto-com-laravel/public/home">Home</a>
+                    <a class="nav-link btn-lg bg-bl" href="http://localhost/Projeto-com-laravel/public/home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link btn-lg" href="http://localhost/Projeto-com-laravel/public/sobre">Sobre</a>
@@ -37,23 +46,14 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
+        <div id="myCarousel" class="carousel-inner">
             <div class="carousel-item active">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
                 <div class="container">
                     <div class="carousel-caption text-left">
 
-                        @if(date('H')>=0 && date('H')<=6)
-                            <h4>Olá! Boa Madrugada :)</h4>
-                        @elseif(date('H')>=7 && date('H')<=12)
-                            <h4>Olá! Bom dia</h4>
-                        @elseif(date('H')>=13 && date('H')<=18)
-                            <h4>Olá! Boa Tarde</h4>
-                        @else
-                            <h4>Olá! Boa noite</h4>
-                        @endif
-                        <h1>Laravel</h1>
-                        <h1>O framework PHP para artesãos da Web.</h1>
+                        <h1 class="text-orange">Laravel</h1>
+                        <h2>O framework PHP para artesãos da Web.</h2>
                         <p>O Laravel é uma estrutura de aplicativos da web com sintaxe expressiva e elegante. Já lançamos as bases - liberando você para criar sem suar as pequenas coisas.</p>
                     </div>
                 </div>
@@ -62,8 +62,8 @@
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Bootstrap.</h1>
-                        <h1>A biblioteca de componentes front-end mais popular do mundo.</h1>
+                        <h1 class="text-roxobo">Bootstrap.</h1>
+                        <h2>A biblioteca de componentes front-end mais popular do mundo.</h2>
                         <p>Crie projetos responsivos HTML, CSS e JS para dispositivos móveis na Web.</p>
                     </div>
                 </div>
@@ -72,8 +72,8 @@
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
                 <div class="container">
                     <div class="carousel-caption text-right">
-                        <h1>Jquery</h1>
-                        <h1>jQuery mudou a maneira como milhões de pessoas escrevem JavaScript.</h1>
+                        <h1 class="text-azulquery">Jquery</h1>
+                        <h2>jQuery mudou a maneira como milhões de pessoas escrevem JavaScript.</h2>
                         <p>O jQuery é uma biblioteca JavaScript rápida, pequena e rica em recursos. Isso simplifica muito o processo de passagem e manipulação de documentos HTML, manipulação de eventos, animação e Ajax com uma API fácil de usar que funciona em vários navegadores.</p>
                     </div>
                 </div>
@@ -88,88 +88,25 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <div id="formC">
+    <form class="bg-cinza">
+        <h1 class="h3 mb-3 font-weight-normal text-black-50">Dê sua opinião</h1>
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input type="email" id="" class="form-control" placeholder="Email">
+        <fieldset>
+            <label for="msg" class="sr-only"></label>
+            <textarea name="msg" id="msg" cols="103" rows="10" placeholder="Escreva uma mensagem"></textarea>
+        </fieldset>
+        <button class="btn btn-lg btn-primary " type="submit">Confirmar</button>
+    </form>
+    </div>
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-4">
-
-                <h2>Instalar Bootstrap</h2>
-                <p>Inclua os arquivos Sass e JavaScript de origem do Bootstrap via npm, Composer ou Meteor. As instalações gerenciadas por pacote não incluem documentação, mas incluem nosso sistema de construção e leia-me...</p>
-                <p><a target="_blank" class="btn btn-secondary" href="https://getbootstrap.com/" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-
-                <h2>Laravel Vapor</h2>
-                <p>O Laravel Vapor é uma plataforma de implantação sem servidor para o Laravel, desenvolvida pela AWS. Inicie sua infraestrutura Laravel no Vapor e se apaixone pela simplicidade escalável dos servidores sem servidor...</p>
-                <p><a target="_blank" class="btn btn-secondary" href="https://vapor.laravel.com/" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-
-                <h2>Download do jQuery</h2>
-                <p>Cópias compactadas e descompactadas dos arquivos jQuery estão disponíveis. O arquivo não compactado é melhor usado durante o desenvolvimento ou depuração; o arquivo compactado economiza largura de banda e melhora o desempenho na produção...</p>
-                <p><a target="_blank" class="btn btn-secondary" href="https://jquery.com/download/" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
-
-
-    <!-- FOOTER -->
-    <footer class="container">
-        <p><a class="float-right btn btn-primary" href="">Topo</a></p>
-        <p>Twitter <a target="_blank" href="https://twitter.com/Dabisilva1">Davi Barbosa</a>/ GitHub<a target="_blank" href="https://github.com/Dabisilva"> Dabisilva</a></p>
-        <p class="float-left">&copy; {{ date('Y') }} Company</p>
+    <div id="footerC">
+    <footer id="" class="container">
+        <p class="float-left text-white">&copy; {{ date('Y') }} Company</p>
+        <p class="float-md-none text-white">Twitter <a target="_blank" href="https://twitter.com/Dabisilva1">Davi Barbosa</a>/ GitHub<a target="_blank" href="https://github.com/Dabisilva"> Dabisilva</a></p>
     </footer>
+    </div>
 </main>
 
 <script src="{{ asset('site/jquery.js') }}"></script>
