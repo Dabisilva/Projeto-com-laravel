@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sobre</title>
+    <title>Projeto com Frameworks</title>
 
     <link rel="stylesheet" href="{{ asset('site/style.css') }}">
 </head>
@@ -30,7 +30,7 @@
 </header>
 
 <main role="main">
-
+    <div id="carroselS">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -45,7 +45,7 @@
 
                         <h1 class="text-orange">Laravel</h1>
                         <h2>O framework PHP para artesãos da Web.</h2>
-                        <p>O Laravel é uma estrutura de aplicativos da web com sintaxe expressiva e elegante. Já lançamos as bases - liberando você para criar sem suar as pequenas coisas.</p>
+                        <p>Uma estrutura de aplicativos da web com sintaxe expressiva e elegante. Já lançando as bases - liberando você para criar sem suar as pequenas coisas.</p>
                     </div>
                 </div>
             </div>
@@ -64,8 +64,8 @@
                 <div class="container">
                     <div class="carousel-caption text-right">
                         <h1 class="text-azulquery">Jquery</h1>
-                        <h2>jQuery mudou a maneira como milhões de pessoas escrevem JavaScript.</h2>
-                        <p>O jQuery é uma biblioteca JavaScript rápida, pequena e rica em recursos. Isso simplifica muito o processo de passagem e manipulação de documentos HTML, manipulação de eventos, animação e Ajax com uma API fácil de usar que funciona em vários navegadores.</p>
+                        <h2>Mudando a maneira como milhões de pessoas escrevem JavaScript.</h2>
+                        <p>Uma biblioteca leve, rápida e cheia de recursos para Javascript.</p>
                     </div>
                 </div>
             </div>
@@ -78,6 +78,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
     </div>
 
     <!-- Marketing messaging and featurettes
@@ -115,11 +116,11 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">Laravel <span class="text-muted">uma comunidade criada para pessoas como você.</span></h2>
+                <p class="lead">Seja você um desenvolvedor solo ou uma equipe de 20 pessoas, começar é simples, graças à nossa grande comunidade.</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img width="500" height="500" src="{{ asset('img/laravel.png') }}">
             </div>
         </div>
 
@@ -127,11 +128,11 @@
 
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">Bootstrap <span class="text-muted">See for yourself.</span></h2>
+                <p class="lead">Descubra o Bootstrap, o framework mais conhecido do mundo para criar sites responsivos e mobile, comece com o BootstrapCDN e nosso template inicial.Documentação e exemplos de utilitários de texto comuns para controle de alinhamento, quebra de linha, espessura, etc.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img width="500" height="500" src="{{ asset('img/bootstrap.png') }}">
             </div>
         </div>
 
@@ -139,11 +140,11 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">Jquery<span class="text-muted">Checkmate.</span></h2>
+                <p class="lead">O jQuery é uma biblioteca JavaScript rápida, pequena e rica em recursos. Isso simplifica muito o processo de passagem e manipulação de documentos HTML, manipulação de eventos, animação e Ajax com uma API fácil de usar que funciona em vários navegadores.</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img width="500" height="500" src="{{ asset('img/jquery.png') }}">
             </div>
         </div>
 

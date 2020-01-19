@@ -12322,52 +12322,64 @@ body {
     }
 }
 
-body#corpo{
-    background-color: #1b1e21;
-    margin-bottom: -200px;
+html, body {height:100%;}
+
+.geral {
+    min-height:100%;
+    position:relative;
+    width:800px;
 }
 
-body#corpoH{
-    margin-bottom: -100px;
-    margin-top: 100px;
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
 
-div#sobre{
+.content {overflow:hidden;}
+.aside {width:200px;}
+.fleft {float:left;}
+.fright {float:right;}
+
+div#carroselS{
+    margin-top: -12%;
+}
+
+textarea#msg{
+    border-radius: 5px;
+}
+
+form#borda{
+    border-radius: 10px;
+}
+
+div#sobre {
     background-color: white;
-    margin-top: -65px;
-    margin-bottom: -50px;
-}
+    margin-top: -5%;
+    padding: 5%;
+    padding-bottom: 0%;
 
-div#footer{
-    margin-bottom: -130px;
-    padding-bottom: 30px;
-}
-
-div#footerh{
-    background-color: #1b1e21;
-    margin-bottom: -130px;
-    padding-bottom: 30px;
-    padding-top: 20px;
-}
-
-div#caroselH{
-    margin-top: -220px;
-    margin-bottom: 200px;
-}
-
-div#myCarousel{
-    margin-top: -190px;
 }
 
 div#formC{
     padding-right: 300px;
     padding-left: 300px;
+    margin-bottom: 5%;
 
 }
-div#footerC{
-    padding-top: 20px;
+
+body{
+    background-color: #1b1e21;
 }
 
-textarea#msg{
-    border-radius: 5px;
+hgroup#H{
+    height: 600px;
+    padding-top: 15%;
+}
+
+div#H{
+    background-color: white;
+    margin-top: -5%;
+    padding: 10%;
+    font-size: 15pt;
 }

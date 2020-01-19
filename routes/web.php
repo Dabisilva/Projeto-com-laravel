@@ -22,3 +22,7 @@ Route::get('/sobre', function () {
 Route::get('/contato', function () {
     return view('site.contato');
 })->name('site.contato');
+
+Route::get('/contatos', function () {
+    return view('site.contatos');
+})->name('site.contatos');
