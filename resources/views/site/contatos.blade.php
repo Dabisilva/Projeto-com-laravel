@@ -25,13 +25,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link btn-lg bg-bl" href="http://localhost/Projeto-com-laravel/public/home">Home</a>
+                    <a class="nav-link btn-lg" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn-lg" href="http://localhost/Projeto-com-laravel/public/sobre">Sobre</a>
+                    <a class="nav-link btn-lg" href="/sobre">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn-lg" href="http://localhost/Projeto-com-laravel/public/contato">Contato</a>
+                    <a class="nav-link btn-lg" href="/contato">Contato</a>
                 </li>
             </ul>
         </div>

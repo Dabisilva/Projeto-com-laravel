@@ -1,0 +1,30 @@
+* a pagina inicial ta sem rota, retornando 404:  localhost:8000/
+* os links dentro das páginas estão quebrados..... se eu acessar qualquer link ele ta mandando para um link errado, exemplo: http://localhost/Projeto-com-laravel/public/home.
+
+Isso acontece pq vc está usando links absolutos, o que é errado: <a class="nav-link btn-lg" href="http://localhost/Projeto-com-laravel/public/home">Home
+
+Vc precisa utilizar as rotas do laravel,  dessa forma vai funcionar em qualqer servidor 
+
+<div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link btn-lg" href="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-lg" href="/sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-lg" href="/contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+
+Essa é a forma certa...
+
+Precisa estudar sobre componentes... header, footer.... pode ser utilizando o blade do laravel, ele trabalha com esquema de sections, onde vc cria templates para reaproveitar código....
+Pois 
+
+Isso evita que em cada página vc duplique o código, por exemplo, pra corrigir o problema das rotas eu tive que mexer em 4 arquivos... se isso estivesse dentro de um componente header e fosse reaproveitado nas outras páginas, eu iria mexer apenas em 1 único lugar.
+
+Nesse link tem um pouco mais sobre o que eu estou falando: https://laravel.com/docs/6.x/blade#template-inheritance
