@@ -8,14 +8,6 @@
     <title>Contato</title>
 
     <link rel="stylesheet" href="{{ asset('site/style.css') }}">
-    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c">
 
 </head>
 <body id="corpo" class="text-center">
@@ -25,13 +17,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link btn-lg" href="/home">Home</a>
+                    <a class="nav-link btn-lg" href="{{route('site.home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn-lg" href="/sobre">Sobre</a>
+                    <a class="nav-link btn-lg" href="{{ route('site.sobre') }}">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn-lg" href="/contato">Contato</a>
+                    <a class="nav-link btn-lg" href="{{ route('site.contato') }}">Contato</a>
                 </li>
             </ul>
         </div>
